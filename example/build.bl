@@ -1,8 +1,4 @@
-// Build tools for SDL2 needed on Windows.
-#load "glfw3/build.bl"
-
 build :: fn () #build_entry {
     exe :: add_executable("glfw-test");
     add_unit(exe, "main.bl");
-    glfw3_copy_deps();
 }
