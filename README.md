@@ -17,10 +17,6 @@ Clone the repository into to the `bl` API folder.
 cd $(blc -where-is-api)
 git clone https://github.com/travisdoor/bl-glfw3.git glfw3
 ```
-Install `glfw3` development package with your favorite package manager.
-```bash
-apt install libglfw3-dev
-```
 
 ## macOS
 Clone the repository into to the `bl` API folder.
