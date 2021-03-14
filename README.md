@@ -37,15 +37,15 @@ Minimal glfw3 application in `example` folder. Use `blc -b` to compile.
 TITLE :: "GLFW";
 
 main :: fn () s32 {
-    glfw.Init();
-    defer glfw.Terminate();
+    Glfw.Init();
+    defer Glfw.Terminate();
 
-    window :: glfw.CreateWindow(800, 600, TITLE.ptr, null, null);
-    defer glfw.DestroyWindow(window);
-    glfw.MakeContextCurrent(window);
-    loop glfw.WindowShouldClose(window) == 0 {
-        glfw.PollEvents();
-        glfw.SwapBuffers(window);
+    window :: Glfw.CreateWindow(800, 600, TITLE.ptr, null, null);
+    defer Glfw.DestroyWindow(window);
+    Glfw.MakeContextCurrent(window);
+    loop Glfw.WindowShouldClose(window) == 0 {
+        Glfw.PollEvents();
+        Glfw.SwapBuffers(window);
     }
     return 0;
 }

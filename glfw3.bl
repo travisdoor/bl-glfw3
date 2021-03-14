@@ -1,6 +1,6 @@
 // generated from /usr/local/Cellar/glfw/3.3/include/GLFW/glfw3.h
 
-#scope glfw
+#scope Glfw
 
 VERSION_MAJOR          :: 3;
 VERSION_MINOR          :: 3;
